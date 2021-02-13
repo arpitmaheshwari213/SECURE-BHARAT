@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../images/favicon.png" type="image/png" sizes="16x18">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Material design -->
+  <link href="../css/material/bootstrap-material-design.css" rel="stylesheet">
+  <link href="../css/material/ripples.min.css" rel="stylesheet">
+  <link href="../css/sidenav.css" rel="stylesheet">
+  <script src="../js/material/material.min.js"></script>
+  <script src="../js/material/ripples.min.js"></script>
+
+  <style>
+  h1,h2,h3,h4,h5,h6,p{
+    font-family:'Josefin Slab',sans-serif;
+    text-align:justify;
+  }
+  p{
+    font-size:18px;
+  }
+  .modal-content{
+	padding:10px;
+	line-height:20px;
+	font-size:16px;
+	}
+  </style>
+  <script>
+  $(document).ready(function(){
+    $.material.init();
+    $("select").dropdown();
+  });
+  </script>
+</head>
+<body>
+  <div class="navbar navbar-default" style="margin-bottom:0px;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-default-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">SECURE BHARAT</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-default-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:void(0)">HOME</a></li>
+          <li><a href="javascript:void(0)">TREASURE HUNT</a></li>
+          <li><a href="javascript:void(0)">SCAVENGER HUNT</a></li>
+          <li><a href="javascript:void(0)">AWARENESS QUIZ</a></li>
+          <li><a href="javascript:void(0)">Q&A FORUM</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+
+        <li class="sidebar-brand">
+          <a href="scavenger_hunt.html">
+            SCAVENGER HUNT
+          </a>
+        </li>
+        <li>
+          <a href="email_threats.html">EMAIL THREATS</a>
+        </li>
+        <li>
+          <a href="atm_threats.html">ATM FRAUDS</a>
+        </li>
+        <li>
+          <a href="online_banking.html">ONLINE BANKING </a>
+        </li>
+        <li>
+          <a href="phishing_attacks.html">PHISHING ATTACKS</a>
+        </li>
+        <li>
+          <a href="#menu-toggle1"  id="menu-toggle1">
+            CLOSE
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1 col-xs-12">
+        <div id="page-content-wrapper">
+          <a href="#menu-toggle" class="btn btn-default" style="border:2px solid white " id="menu-toggle">
+            <i class="material-icons" style="font-size:30px">view_list</i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <h2 style="text-align:center;">PHISHING ATTACKS</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10  col-md-offset-1">
+      <div class="row">
+      	<div class="col-sm-6 col-sm-offset-3">
+    	<center>
+		<img src="Phishing-attack/SBI-Phishing-page-Spam_thumbCustom.png" style="width:80%; padding-bottom:20px;">
+        </center>
+        </div>
+      </div>
+      <script>
+	  	var status1 = "less";
+		var status2 = "less";
+		var status3 = "less";
+		var status4 = "less";
+		var status5 = "less";
+		var status6 = "less";
+		var status7 = "less";
+		var status8 = "less";
+		var text= new Array(9);
+		function toggleText1()
+		{	
+			text[1]='Phishing is typically carried out by e-mail spoofing or instant messaging and it often directs users to enter details at a fake website whose look and feel are almost identical to the legitimate one. Phishing is an example of social engineering techniques used to deceive users.';
+			
+			if (status1 == "less") {
+				document.getElementById("textArea1").innerHTML=text[1];
+				document.getElementById("toggleButton1").innerText = "See Less";
+				status1 = "more";
+			} else if (status1 == "more") {
+				document.getElementById("textArea1").innerHTML = "";
+				document.getElementById("toggleButton1").innerText = "See More";
+				status1 = "less";
+			}
+		}
+
+		function toggleText2()
+		{
+			text[2]="<p>"+"Links might also lead you to .exe files. These kinds of file are known to spread malicious software."+"</p><ul><li><p>"+"Threats"+"</p><p>"+"Sometimes you may receive a threat mail saying that your webmail account would be closed if you do not respond to an e-mail message. The e-mail message shown above is an example of the same trick. Cybercriminals often use techniques to make one believe that security has been compromised."+"</li><li><p>"+"Spoofing popular / companies’ websites."+"</p><p>"+"Scam artists use graphics in email that look identical to legitimate websites but actually take you to phony scam sites or legitimate-looking pop-up windows."+"</p></li><li><p>"+"Cybercriminals also use web addresses that resemble the names of well-known companies but are slightly altered."+"</p></li><li><p>"+"Cybercriminals might call you on the phone and offer to help solve your computer problems or sell you a software license."+"</p></li></ul>";
+			if (status2 == "less") {
+				document.getElementById("textArea2").innerHTML=text[2];
+				document.getElementById("toggleButton2").innerText = "Hide Description";
+				status2 = "more";
+			} else if (status2 == "more") {
+				document.getElementById("textArea2").innerHTML = "";
+				document.getElementById("toggleButton2").innerText = "Brief Description";
+				status2 = "less";
+			}
+		}
+		
+		function toggleText3()
+		{
+			text[3]="<p>"+"Step1: Cross check the URL in the brows"+"</p><p>"+"Don’t enter your information in the websites that start with numbers"+"</p><p>"+"Step2: Always check for the misspelled URL"+"</p><p>"+"So Always key in the URL in the address bar yourself don’t copy and paste"+"</p><p>"+"Step3: Always perform online banking in secure channel i.e check for the Padlock and secure channel for secure banking"+"</p> <p>"+"Always check for the trusted website which has https and padlock"+"</p><p>"+"Step4 : Always view email requests seeking for financial or other personal information with suspicion email ID, particularly with “URGENT” subject requests. When you are in doubt, do not respond to questionable email or enter information on questionable websites. You may also contact the alleged sender to confirm the legitimacy of communications you’ve received."+"</p><p>"+"An Example of Phishing site, the look and feel of the Punjab national bank is same."+"</p><p>"+"Step5 : Never respond to the emails that ask for your personal information like credit card /debit card/bank information."+"</p>";
+			if (status3 == "less") {
+				document.getElementById("textArea3").innerHTML=text[3];
+				document.getElementById("toggleButton3").innerText = "Hide Description";
+				status3 = "more";
+			} else if (status3 == "more") {
+				document.getElementById("textArea3").innerHTML = "";
+				document.getElementById("toggleButton3").innerText = "Brief Description";
+				status3 = "less";
+			}
+		}
+		
+		function toggleText4()
+		{
+			text[4]="<ul><li><p>"+"Be cautious about opening any attachments or downloading files you receive regardless of who sent them."+"</p></li><li><p>"+"Look for the sender email ID before you enter/give away any personal information."+"</p></li><li><p>"+"Use updated antivirus, antispyware and firewall software."+"</p></li><li><p>"+"Always update your web browser and enable phishing filter."+"</p></li><li><p>"+"If you receive any suspicious e-mail, do call the company to confirm if it is legitimate or not."+"</p></li><li><p>"+"Do use a separate email accounts for things like shopping online, personal etc."+"</p></li></ul>";
+			if (status4 == "less") {
+				document.getElementById("textArea4").innerHTML=text[4];
+				document.getElementById("toggleButton4").innerText = "Hide Description";
+				status4 = "more";
+			} else if (status4 == "more") {
+				document.getElementById("textArea4").innerHTML = "";
+				document.getElementById("toggleButton4").innerText = "Brief Description";
+				status4 = "less";
+			}
+		}
+		
+		function toggleText5()
+		{
+			text[5]="<ul><li><p>"+"Don’t reply to an e-mail or pop-up message that asks for personal or financial information."+"</p></li><li><p>Don’t e-mail personal or financial information i.e credit card or other sensitive information via  e-mail."+"</p></li><li><p>"+"Don’t click on any email or social media messages you don’t expect or need."+"</p></li><li><p>"+"Don’t open e-mail that you have any suspicion may not be legitimate. If it is legitimate and the   individual may try to contact you, if the email really needs."+"</p></li><li><p>"+"Don’t open attachments that you were not expecting, especially ZIP files and NEVER run .exe   files."+"</p></li><li><p>"+"Don’t use your company e-mail address for personal things."+"</p></li><li><p>"+"Don’t open suspicious videos or images in social networking sites since social networking sites are   prime target of phishing."+"</p></li><li><p>"+"Don’t open/download attachments from any spam e-mail."+"</p></li><li><p>"+"Never respond to phone calls asking for bank details. It might be vishing (voice phishing)."+"</p></li><li><p>"+"Beware of phishing phone calls."+"</p></li><li><p>"+"Don’t respond if you receive any message(sms) asking you to confirm account information that  has been “stolen” or “lost” or encouraging you to reveal personal information in order to receive   a prize, it’s most likely a form of phishing"+"</p></li></ul>";
+			if (status5 == "less") {
+				document.getElementById("textArea5").innerHTML=text[5];
+				document.getElementById("toggleButton5").innerText = "Hide Description";
+				status5 = "more";
+			} else if (status5 == "more") {
+				document.getElementById("textArea5").innerHTML = "";
+				document.getElementById("toggleButton5").innerText = "Brief Description";
+				status5 = "less";
+			}
+		}
+		
+		function toggleText6()
+		{
+			text[6]="<ul><li><p>"+"Social networking sites are now a prime target of phishing attacks, since the personal details in such site   can be used in identity theft."+"</p></li><li><p>"+"One of the latest phishing techniques is tabnabbing. It takes advantage of the multiple tabs that   users use and silently redirects a user to the affected site."+"</p></li><li><p>"+"Filter Evasion - Phishers have used images instead of text to make it harder for anti-phishing filters to   detect text commonly used in phishing e-mails."+"</p></li><li><p>"+"Phone Phishing - Not all phishing attacks require a fake website. Messages that claimed to be from a   bank told users to dial a phone number regarding problems with their bank accounts. Once the   phone number (owned by the phisher, and provided by a Voice over IP service) was dialed, prompts   told users to enter their account numbers and PIN."+"<br>"+"Visher sometimes uses fake caller-ID data to give   the appearance that calls come from a trusted organization."+"</p></li><li><p>"+"Another attack used successfully is to forward the client to a bank's legitimate website, then to place  a popup window requesting credentials on top of the website in a way that it appears the bank is  requesting this sensitive information"+"</p></li></ul>";
+			if (status6 == "less") {
+				document.getElementById("textArea6").innerHTML=text[6];
+				document.getElementById("toggleButton6").innerText = "Hide Description";
+				status6 = "more";
+			} else if (status6 == "more") {
+				document.getElementById("textArea6").innerHTML = "";
+				document.getElementById("toggleButton6").innerText = "Brief Description";
+				status6 = "less";
+			}
+		}
+		
+		function toggleText7()
+		{
+			text[7]="<ul><li><p>"+"Normally phishing e-mails display grammatical errors or overlapped text."+"</p></li><li><p>"+"Test using false data before putting in actual information."+"</p></li></ul>";
+			if (status7 == "less") {
+				document.getElementById("textArea7").innerHTML=text[7];
+				document.getElementById("toggleButton7").innerText = "Hide Description";
+				status7 = "more";
+			} else if (status7 == "more") {
+				document.getElementById("textArea7").innerHTML = "";
+				document.getElementById("toggleButton7").innerText = "Brief Description";
+				status7 = "less";
+			}
+		}
+		
+		function toggleText8()
+		{
+			text[8]="<ul><li><p>"+"Take these steps to minimize any damage if you suspect that you've responded to a phishing scamwith personal or financial information or entered this information into a fake website."+"</p></li><li><p>"+"Change the passwords or PINs of all your online accounts that you think could be compromised."+"</p></li><li><p>"+"Place a fraud alert on your credit reports. Check with your bank or financial advisor if you're not sure how to do this."+"</p></li><li><p>"+"Contact the bank or the online merchant directly. Do not follow the link in the fraudulent e-mail."+"</p></li><li><p>"+"Routinely review your bank and credit card statements for unexplained charges or inquiries that you didn't initiate."+"</p></li></ul>";
+			if (status8 == "less") {
+				document.getElementById("textArea8").innerHTML=text[8];
+				document.getElementById("toggleButton8").innerText = "Hide Description";
+				status8 = "more";
+			} else if (status8 == "more") {
+				document.getElementById("textArea8").innerHTML = "";
+				document.getElementById("toggleButton8").innerText = "Brief Description";
+				status8 = "less";
+			}
+		}
+			
+	  </script>
+      <p>Phishing is a way of attempting to acquire information such as usernames, passwords, PIN,bank account, credit card details by masquerading as a trustworthy entity details through electronic communication means like e-mail.
+          <p id="textArea1"></p>
+	      <a id="toggleButton1" onClick="toggleText1()" style="cursor:pointer;">See More</a>
+       </p>
+      <h3><b>GET SOME KNOWLEDGE</b></h3>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>Check for Spelling and bad grammar.</h4>        
+      <p id="textArea2"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton2" onClick="toggleText2()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>Steps to Remember</h4>
+      <p id="textArea3"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton3" onClick="toggleText3()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>Do's</h4>
+      <p id="textArea4"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton4" onClick="toggleText4()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>Don'ts</h4>
+      <p id="textArea5"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton5" onClick="toggleText5()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>Here are the few Phishing Techniques...</h4>
+      <p id="textArea6"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton6" onClick="toggleText6()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>How I can recognize a message of Phishing? </h4>
+      <p id="textArea7"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton7" onClick="toggleText7()" style="cursor:pointer;">Brief Description</a>
+      <h4><i style="vertical-align:middle" class="material-icons"> keyboard_arrow_right </i>What should I do if I think I've responded to a Phishing Scam?</h4>
+      <p id="textArea8"></p>&ensp;&ensp;&ensp;&ensp;&ensp;
+      <a id="toggleButton8" onClick="toggleText8()" style="cursor:pointer;">Brief Description</a>
+
+		<h3><b>QUIZ</b></h3>
+        <p>Test some basic knowledge of Phishing. Answer atleast 4 out of 5 correctly to satisfy yourself.</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#4">Start Quiz</button>
+      <div id="4" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <fieldset class="form-group row">
+              <legend class="col-form-legend">Email is the only method used in phishing attacks to con people into voluntarily giving away information.</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1">
+                    True
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios2" value="option2">
+                    False
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <legend class="col-form-legend">The smaller screens on mobile devices make it harder to spot a phishing website.</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios3" value="option1">
+                    True
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios4" value="option2">
+                    False
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <legend class="col-form-legend">Do you open e-mail attachments or links without checking to see who they are from?</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios5" value="option1">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios6" value="option2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <legend class="col-form-legend">Phishing attacks only happen on insecure channels that start from `http'</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios7" value="option1">
+                    True
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios8" value="option2">
+                    False
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group row">
+              <legend class="col-form-legend">Technique of phishing inwhich the images are used instead of ext to make it hard for antiphishing filters to detect?</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios5" id="gridRadios9" value="option1">
+                    Phone Phishing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios5" id="gridRadios10" value="option2">
+                    Whole Phishing 
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios5" id="gridRadios11" value="option2">
+                    Filter Evasion
+                  </label>
+                </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios5" id="gridRadios12" value="option2">
+                    Tabnabbing 
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <script>
+			var temp4 = new Array(5);
+			for(var i=0;i<temp4.length;i++)
+            	temp4[i]='Not Attempted';
+			function func4(){
+			if( document.getElementById('gridRadios2').checked)
+                    temp4[0]='Correct';
+            if( document.getElementById('gridRadios1').checked)
+                    temp4[0]='Incorrect';
+            if( document.getElementById('gridRadios4').checked)
+                    temp4[1]='Correct';
+            if( document.getElementById('gridRadios3').checked)
+                     temp4[1]='Incorrect';
+            if( document.getElementById('gridRadios6').checked)
+                     temp4[2]='Correct';
+            if( document.getElementById('gridRadios5').checked)
+                      temp4[2]='Incorrect';
+			if( document.getElementById('gridRadios8').checked)
+                    temp4[3]='Correct';
+            if( document.getElementById('gridRadios7').checked)
+                    temp4[3]='Incorrect';
+            if( document.getElementById('gridRadios11').checked)
+                    temp4[4]='Correct';
+            if( document.getElementById('gridRadios12').checked)
+                     temp4[4]='Incorrect';
+            if( document.getElementById('gridRadios10').checked)
+                     temp4[4]='Incorrect';
+            if( document.getElementById('gridRadios9').checked)
+                      temp4[4]='Incorrect';
+					  
+			$('#4').modal('hide');
+			$('#ans4').modal('show');
+            }
+											 
+			
+            </script>
+            <button id = "demo" type="submit" class="btn btn-primary" onclick="func4()">Submit</button>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div id="ans4" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="vertical-align:middle;">
+      
+        <div class="modal-dialog modal-lg" role="document" >
+            <div class="modal-content">
+            	<div id="xyz"></div>
+            </div>
+        </div>
+      </div>
+      <script>
+				
+		$('#ans4').on('show.bs.modal', function () {
+		  // do something…
+		  var full_text = '';
+			for(var i=0;i<temp4.length; i++)
+			{
+				full_text+=i+1+'.'+"&nbsp;"+temp4[i]+"<br/>";	
+			}
+			
+			document.getElementById("xyz").innerHTML = full_text;
+		}) 
+       </script>
+      
+        <h3><b>Resources</b></h3>          
+          </div>
+        </div>
+      </div>
+      <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      $("#menu-toggle1").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      </script>
+    </body>

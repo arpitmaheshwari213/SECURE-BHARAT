@@ -1,0 +1,115 @@
+	
+.center-block {
+	display: block;
+	margin-right: auto;;
+	margin-left: auto;
+}
+body{
+     background:black;
+     color:lime;
+     padding-top: 10px;
+}
+.header{
+		width:100%;
+}
+.leftheader{
+		     border:1px red solid;
+			 float:left;
+			 height: 100px;
+			 width:12%;
+}
+.midheader{
+			 float:left;
+			 width:50%;
+			 font-family:monospace;
+			 margin:auto;
+			 font-size:larger;
+			 display: block;
+			 position: relative;			
+}
+p{
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#text{
+	display: block;
+}
+.leftdiv{
+			width:300px;
+			margin-top:25px;
+			margin-left:20px;
+			color:lime;
+			font-family:monospace;
+			font-size:large;
+			float:left;
+}
+.bitcoin{
+			border:1px red solid;
+			border-radius:10px;
+		 	color:red;
+			margin:10px;
+			text-align:center;
+			font-family:monospace;
+			font-size:large;
+}
+.hack{
+  width: 0px;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: type;
+  animation-duration: 6s;
+  overflow: hidden;
+}
+p{
+  color: lime; 
+  font-family: "DJB Get Digital";
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+}
+@keyframes type{
+ from{width: 0;}
+ to{ width:  100%; } 
+}
+
+#button {
+    color: lime;
+    border: 1px dashed lime;
+    width: 205px;
+    padding: 6px;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: blink .5s cubic-bezier(1,0,0,0)  16.5s infinite alternate;
+}
+@keyframes blink{
+100%{opacity: 0;}
+}

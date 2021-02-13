@@ -1,0 +1,92 @@
+.userdetail{
+			width:90%;		
+		    border:1px red solid;
+			border-radius:20px;
+		 	color:red;
+			margin:auto;
+			text-align:center;
+			font-family:monospace;
+			font-size:14px;		 				
+}
+.toph4{
+			float:right;
+			width:10%;
+			font-size:18px;
+			text-align:center;
+			margin:auto;
+			padding-top:5px;
+			
+}
+.center-block {
+	display: block;
+	margin-right: auto;;
+	margin-left: auto;
+}
+body{
+  padding-top: 10px;
+} 
+#text{
+	display: block;
+}
+p{
+  color: lime; 
+  font-family: "DJB Get Digital";
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: -moz-fit-content;
+  max-width: -webkit-fit-content;
+  width: 0px;
+  margin-right: auto;;
+  margin-left: auto;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: type;
+  animation-duration: 6s;
+}
+p:nth-child(2){	
+	animation-delay: 5s;
+}
+p:nth-child(3){
+	animation-delay: 8s;
+}
+p:nth-child(4){
+	animation-delay: 12s;
+}
+p:nth-child(5){
+	animation-delay: 15.5s;
+}
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+ from{width: 0;}
+ to{ width:  100%; } 
+}
+
+#button {
+    color: lime;
+    border: 1px dashed lime;
+    width: 205px;
+    padding: 6px;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: blink .5s cubic-bezier(1,0,0,0)  16.5s infinite alternate;
+}
+a:link{
+  color:lime;
+}
+a:hover{
+  color:#0247FE;
+}
+a:visited{
+  color:red;
+}
+a:active{
+  color:yellow;
+}
+@keyframes blink{
+100%{opacity: 0;}
+}

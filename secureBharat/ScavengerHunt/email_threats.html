@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../images/favicon.png" type="image/png" sizes="16x18">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Material design -->
+  <link href="../css/material/bootstrap-material-design.css" rel="stylesheet">
+  <link href="../css/material/ripples.min.css" rel="stylesheet">
+  <link href="../css/sidenav.css" rel="stylesheet">
+  <script src="../js/material/material.min.js"></script>
+  <script src="../js/material/ripples.min.js"></script>
+
+  <style>
+  h1,h2,h3,h4,h5,h6,p{
+    font-family:'Josefin Slab',sans-serif;
+    text-align:justify;
+  }
+  p{
+    font-size:18px;
+  }
+  </style>
+  <script>
+  $(document).ready(function(){
+    $.material.init();
+    $("select").dropdown();
+  });
+  </script>
+</head>
+<body>
+  <div class="navbar navbar-default" style="margin-bottom:0px;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-default-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">SECURE BHARAT</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-default-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:void(0)">HOME</a></li>
+          <li><a href="javascript:void(0)">TREASURE HUNT</a></li>
+          <li><a href="javascript:void(0)">SCAVENGER HUNT</a></li>
+          <li><a href="javascript:void(0)">AWARENESS QUIZ</a></li>
+          <li><a href="javascript:void(0)">Q&A FORUM</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+
+        <li class="sidebar-brand">
+          <a href="scavenger_hunt.html">
+            SCAVENGER HUNT
+          </a>
+        </li>
+        <li>
+          <a href="email_threats.html">EMAIL THREATS</a>
+        </li>
+        <li>
+          <a href="atm_threats.html">ATM FRAUDS</a>
+        </li>
+        <li>
+          <a href="online_banking.html">ONLINE BANKING </a>
+        </li>
+        <li>
+          <a href="phishing_attacks.html">PHISHING ATTACKS</a>
+        </li>
+        <li>
+          <a href="#menu-toggle1"  id="menu-toggle1">
+            CLOSE
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1 col-xs-12">
+        <div id="page-content-wrapper">
+          <a href="#menu-toggle" class="btn btn-default" style="border:2px solid white " id="menu-toggle">
+            <i class="material-icons" style="font-size:30px">view_list</i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <h2 style="text-align:center;">EMAIL THREATS</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10  col-md-offset-1">
+      <h3 style="text-align:justify">
+        E-Mails are just like  postcards  from which the information can be viewed by anyone.
+        When a mail is transferred from one mail server to another mail server there are various stops at which there is a possibility of unauthorized users trying to view the information or modify it.
+        Since a backup is maintained for an e-Mail server all the messages will
+        be stored in the form of clear text though it has been deleted from your mailbox.
+        Hence there is a chance of viewing the information by the people who are maintaining backups.
+        So  it is not advisable to send  personal information through e-Mails.
+      </h3><br>
+      <h3>EXAMPLES</h3>
+      <hr style="color:black;background-color:black;">
+      <ul>
+        <li><p>Say you have won a  lottery of million dollars, Getting or receiving such kind of mails is a great thing, and really it’s the happiest thing. However these mails  may not be true. By responding to such a kind of mails many people lost huge amount of money. So ignore such  kind of e-Mails,  do not participate in it and consider it as a scam.</p></li>
+        <li><p>Sometimes e-Mails offering free gifts and asking personal information are received from unknown addresses .  This is one way to trap your personal information.</p></li>
+        <li><p>One way of stealing the password is standing behind an individual and looking over their password while they are typing it or searching for the papers where they have written the password.</p></li>
+        <li><p>Another way of stealing the password is by guessing. Hackers try all possible combinations with the help of personal information of an individual.</p></li>
+        <li><p>When there are large numbers of combinations of passwords the hackers use fast processors and some software tools to crack the password. This method of cracking password is known as “Brute force attack”.</p></li>
+        <li><p>Hackers also try all the possible words in a dictionary to crack the password with the help of some software tools. This is called a “dictionary attack”.</p></li>
+        <li><p>Generally spammers or hackers try to steal e-Mail address and send malicious software or code through attachments, fake e-Mails, and spam and also try to collect your personal information.</p></li>
+        <br>
+        <h3>OTHER METHODS</h3>
+        <hr style="color:black;background-color:black;">
+        <h3>Attachments</h3>
+        <p>Sometimes attachments come with e-mails and may contain executable code like macros,.EXE files and ZIPPED files.
+          Sometimes attachments come with double extensions like “attachment.exe.doc”
+          By opening or executing such attachments malicious code may downloaded into your system and can infect your system.
+          Always scan the attachments before you open them.</p>
+          <h3>Fake e-Mails</h3>
+          <p>Sometimes e-Mails are received with  fake e-mail address like services@facebook.com by an attachment named, “Facebook_Password_4cf91.zip" and includes the file "Facebook_Password_4cf91.exe" and the e-mail claims, contains the user's new facebook password.
+            When a user downloads the file, it could cause a mess on their computer and which can be infected with malicious software.
+            Always check and confirm from where the e-mail has been received, generally service people will never ask or provide your password to change.
+          </p>
+          <h3>Spam e-Mails</h3>
+          <p>Spam messages may trouble you by filling your inbox or your e-mail database.
+            Spam involves identical messages sent to various recipients by e-Mail.
+            Sometimes spam e-mails come with advertisements and may contain a virus.
+            By opening such   e-Mails, your system can be infected and your e-Mail ID is listed in spammers list.
+            It is always  recommended  to ignore or delete spam e-mails.</p>
+            <h3>e-Mails offering free gifts</h3>
+            <p>Sometimes e-Mails are targeted at you by unknown users by offering gifts, lottery, prizes, which might be free of cost, and this may ask your personal information for accepting the free gift or may ask money to claim lottery and prizes it is one way to trap your personal information.
+              Always ignore free gifts offered from unknown users.</p>
+              <h3>Hoaxes</h3>
+              <p>Hoax is an attempt to make the person believe something which is false as true.
+                It is also defined as an attempt to deliberately spread fear, doubt among the users.</p>
+                <br>
+                <h3>HOW TO PREVENT?</h3>
+                <hr style="color:black;background-color:black;">
+                <h3>Using filtering software’s</h3>
+
+                <p>Use e-Mail filtering software to avoid Spam so that only messages from authorized users are received.
+                  Most email providers offer filtering services.</p>
+
+                  <h3>Ignore e-mails from strangers</h3>
+
+                  <p>Avoid opening attachments coming from strangers, since they may contain a virus along with the received message.
+                    Be careful while downloading attachments from e-Mails into your hard disk.
+                    Scan the attachment with updated antivirus software before saving it.
+                  </p>
+                  <br>
+                  <h3>GUIDELINES FOR USING E-MAIL SAFELY</h3><hr style="color:black;background-color:black;">
+                  <ul>
+                    <li><p>Since the e-Mail messages are transferred in clear text, it is advisable to use some encryption software like PGP (pretty good privacy) to encrypt email messages before sending, so that it can be decrypted only by the specified recipient only.</p></li>
+                    <li><p>Use Email filtering software to avoid Spam so that only messages from authorized users are received. Most e-Mail providers offer filtering services.</p></li>
+                    <li><p>Do not open attachments coming from strangers, since they may contain a virus along with the received message.</p></li>
+                    <li><p>Be careful while downloading attachments from e-Mails into your hard disk. Scan the attachment with updated antivirus software before saving it.</p></li>
+                    <li><p>Do not send messages with attachments that contain executable code like Word documents with macros, .EXE files and ZIPPED files. We can use Rich Text Format instead of the standard .DOC format. RTF will keep your formatting, but will not include any macros.
+                      This may prevent you from sending virus to others if you are already infected by it.</p></li>
+                      <li><p>Avoid sending personal information through e-Mails.</p></li>
+                      <li><p>Avoid filling forms that come via e-Mail asking for your personal information and do not click on links that come via e-Mail.</p></li>
+                      <li><p>Do not click on the e-Mails that you receive from un trusted users as clicking itself may execute some malicious code and spread into your system.</p></li>
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <script>
+                $("#menu-toggle").click(function(e) {
+                  e.preventDefault();
+                  $("#wrapper").toggleClass("toggled");
+                });
+                $("#menu-toggle1").click(function(e) {
+                  e.preventDefault();
+                  $("#wrapper").toggleClass("toggled");
+                });
+
+                </script>
+              </body>

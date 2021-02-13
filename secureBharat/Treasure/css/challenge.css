@@ -1,0 +1,12 @@
+.challenge1{
+			 float:left;
+			 width:20%;
+			 font-family:monospace;
+			 margin:auto;
+			 font-size:larger;
+			 display: block;
+			 font-size:25px;
+			 position: relative;
+			 padding-left:10%;	
+			 border:1px red solid;
+}

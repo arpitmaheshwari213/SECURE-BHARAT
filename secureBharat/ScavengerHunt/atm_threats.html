@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../images/favicon.png" type="image/png" sizes="16x18">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Material design -->
+  <link href="../css/material/bootstrap-material-design.css" rel="stylesheet">
+  <link href="../css/material/ripples.min.css" rel="stylesheet">
+  <link href="../css/sidenav.css" rel="stylesheet">
+  <script src="../js/material/material.min.js"></script>
+  <script src="../js/material/ripples.min.js"></script>
+
+  <style>
+  h1,h2,h3,h4,h5,h6,p{
+    font-family:'Josefin Slab',sans-serif;
+    text-align:justify;
+  }
+  p{
+    font-size:18px;
+  }
+  </style>
+  <script>
+  $(document).ready(function(){
+    $.material.init();
+    $("select").dropdown();
+  });
+  </script>
+</head>
+<body>
+  <div class="navbar navbar-default" style="margin-bottom:0px;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-default-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">SECURE BHARAT</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-default-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:void(0)">HOME</a></li>
+          <li><a href="javascript:void(0)">TREASURE HUNT</a></li>
+          <li><a href="javascript:void(0)">SCAVENGER HUNT</a></li>
+          <li><a href="javascript:void(0)">AWARENESS QUIZ</a></li>
+          <li><a href="javascript:void(0)">Q&A FORUM</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+
+        <li class="sidebar-brand">
+          <a href="scavenger_hunt.html">
+            SCAVENGER HUNT
+          </a>
+        </li>
+        <li>
+          <a href="email_threats.html">EMAIL THREATS</a>
+        </li>
+        <li>
+          <a href="atm_threats.html">ATM FRAUDS</a>
+        </li>
+        <li>
+          <a href="online_banking.html">ONLINE BANKING </a>
+        </li>
+        <li>
+          <a href="phishing_attacks.html">PHISHING ATTACKS</a>
+        </li>
+        <li>
+          <a href="#menu-toggle1"  id="menu-toggle1">
+            CLOSE
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1 col-xs-12">
+        <div id="page-content-wrapper">
+          <a href="#menu-toggle" class="btn btn-default" style="border:2px solid white " id="menu-toggle">
+            <i class="material-icons" style="font-size:30px">view_list</i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <h2 style="text-align:center;">ATM THREATS</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10  col-md-offset-1">
+      <h3>Automated Teller Machine</h3>
+      <h3>The Automated Teller Machine (ATM) was first commercially introduced in the 1960s. By 2005, there were over 1.5 million ATMs installed worldwide. The introduction of the ATM proved to be an important technological development that enabled financial institutions to provide services to their customers in a 24X7 environment. The ATM has enhanced the convenience of customers by enabling them to access their cash wherever required from the nearest ATM.
+        Financial institutions have implemented many strategies to upgrade the security at their ATMs and reduce scope for fraud. These include choosing a safe location for installing the ATM, installation of surveillance video cameras, remote monitoring, anti-card skimming solutions, and increasing consumer awareness by informing them of various methods of safeguarding their personal information while transacting at the ATM or on the Internet.</h3>
+        <br>
+        <h3>Risks<h3>
+          <hr style="color:black;background-color:black;">
+
+          <p>The fraudster inserts a folded piece of plastic film into the ATM card slot so it will hold of the card and not allow it to be expelled by the machine.
+            The victim believes his or her card to be caught in the machine and doesn't notice the card slot has been tampered with.
+            <br>
+            Once an inserted card is struck a fraudster pretending as a genuine cardholder will suggest that the intended victim re-enter his or her security code.
+            When the cardholder ultimately leaves in despair, the fraudster retrieves the card and enters the code that he has watched clandestinely.
+            <br>
+            Another method involves use of fake cards using data collected from tiny cameras and devices called "skimmers" that capture and record bank account information.
+            This is lesser risky as it does not involve any fraudster-victim interaction and the absence of any fraudster makes the cardholder more relaxed and lesser conscious about the safety of the password.
+            <br>
+            Another interesting method of ATM frauds involves the use of “duplicate ATMs” by the fraudsters that uses software which records the passwords typed on those machines. Thereafter, duplicate cards are manufactured and money is withdrawn with the use of stolen passwords. Sometimes such frauds are an inside job with the collusion of the employees of the company issuing those cards. Whatever the mode of these frauds but it is definitely illegal and punishable as per the law of the concerned country. The punishment may, however, not bring back the money lost in the process. Thus, the punishment of an offender will though prove deterrent to other offenders yet it may not be the best method of restoration of stolen property. Thus, preventive safeguards and insuring the ATM fraud risks seems to be the right approach.
+
+          </p>
+          <br>
+          <h3>Tips</h3>
+          <hr style="color:black;background-color:black;">
+          <ul>
+            <li><p>Enable your mobile phone number and e-mail with your banking transactions for timely SMS and e-mail alerts.</p></li>
+            <li><p>Your Financial Institution or Bank will never send you an e-mail asking you to enter your Banking details  online.</p></li>
+            <li><p>Check regularly  your credit card or bank account details and keep  track of your transactions.</p></li>
+            <li><p>Update your details such as change of address for receipt of cheque books, statements, debit /credit cards at the right address.</p></li>
+            <li><p>For protecting phishing attacks, your browser should be enabled with phishing filters and never click  links in your e-mail for updating and transactions.</p></li>
+            <li><p>Keep a strong and easy to remember password and change  it regularly .</p></li>
+            <li><p>Vishing is a form of phishing, where instead of people receiving an email trying to lure them into giving personal information, the criminal uses a phone call, either live or automated, to attack the bank or credit union customer and get critical information.</p></li>
+            <li><p>Try to restrict yourself from giving personal information when you receive a call from a Bank or Credit Card Provider.</p></li>
+            <li><p>Look for a "no tampering" sign. Crooks often place these to stop anyone curious about a new piece of equipment.</p></li>
+            <li><p>Steer clear of a jammed ATM machine that forces customers to use another ATM that has a skimmer attached. Often, the criminal will disable other ATMs in the area to draw users to the one that has the skimming device on it.</p></li>
+            <li><p>Customers should check their bank accounts regularly to make sure there are no unusual or unauthorized transactions. Federal law limits loss from ATM fraud and many banks offer additional protection. Consumers should check with their financial institution for details.</p></li>
+            <li><p>If you see anything unusual or suspicious around an ATM, or if you find unauthorized ATM transactions on your bank account, immediately notify local law enforcement, as well as your financial institution and/or the establishment where the ATM is located.</p></li>
+            <li><p>Always protect your PIN: Don't give the number to anyone, and cover the keypad while you are entering your.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-toggle1").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    </script>
+
+  </body>

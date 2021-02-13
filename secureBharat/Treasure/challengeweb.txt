@@ -1,0 +1,22 @@
+How can you say that any website is safe.
+
+
+1.No pop-up ads.
+2.No unsolicited email.
+3.The site has a physical address or phone number.
+4.Look at the web address in your browser, make sure the web address starts with https://
+5.Look for a closed padlock in your web browser. When you click on the padlock you should see a message that states the name of the company and that “The connection to the server is encrypted
+
+Owasp top 10 attack's
+
+
+1.Injection
+2.Broken Authentication and Session Management
+3.Cross-Site Scripting (XSS) 
+4.Insecure Direct Object References
+5.Security Misconfiguration
+6.Sensitive Data Exposure
+7.Missing Function Level Access Control
+8.Cross Site Request Forgery (CSRF)
+9.Using Components with Known Vulnerabilities
+10. Unvalidated Redirects and Forwards 

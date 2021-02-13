@@ -1,0 +1,10 @@
+Welcome to the treasure hunt
+" it is the place where you gonna hit the cyber world ... ! "
+
+All the challenges are organised into levels from easy to difficult
+
+Completioin of each challenge reward you some cyber money, which can be used on hints for the cyber problems.
+
+User get ranked on the basis of the thier current level.
+
+You are start with 100 bitcoins. 
