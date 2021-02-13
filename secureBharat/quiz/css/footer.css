@@ -1,0 +1,84 @@
+/*safron #FF9933
+green #138808
+white #FFFFFF
+blue #000080*/
+
+body{
+  color:#000080;
+}
+/*navbar Styling*/
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+    font-family:cursive;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 16px;
+    background-color: rgba(255, 153, 51, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 153, 51, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(19, 136, 8, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(19, 136, 8, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ff9933;
+}
+
+/*footer Styling*/
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    padding:9px;
+    width: 100%;
+    background-color:#138808;
+    color:white;
+    font-family:cursive;
+}
+footer div div div a{
+  padding:14px;
+  color:white;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+footer div div div a:hover{
+  color:#FF9933;
+
+}
+footer div div div a:active,a:visited,a:link {
+  color:white;
+  text-decoration:none;
+}
+@media only screen and (max-width: 600px)  {
+footer{
+  padding:7px;
+}
+  footer h4{
+    font-size: 14px;
+  }
+}

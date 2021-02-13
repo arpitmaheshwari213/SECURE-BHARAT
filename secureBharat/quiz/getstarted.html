@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Material design -->
+  <link href="css/material/bootstrap-material-design.css" rel="stylesheet">
+  <link href="css/material/ripples.min.css" rel="stylesheet">
+  <script src="js/material/material.min.js"></script>
+  <script src="js/material/ripples.min.js"></script>
+
+
+  <script>
+  $(document).ready(function(){
+    $.material.init();
+    $("select").dropdown();
+  });
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+		<div class="row">
+			<div class=" col-sm-offset-2 col-sm-8 col-xs-12 col-md-offset-2 col-md-8" style="margin-top:50px;margin-bottom:50px;">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<p class="panel-title" style="text-align: center; font-size: 36px; line-height: 1.5;">
+						<i class="material-icons" style="font-size: 48px;">book</i><br>
+						How Secure You are?</p>
+					</div>
+					<div class="panel-body">
+						<form action="" method="POST" style="margin-top: 12px;">
+              <!-- question start -->
+              <div class="form-group">
+
+      <div class="col-md-10">
+        <h4>Q.What is XYZ?</h4>
+        <div class="radio radio-primary">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+            Option1
+          </label>
+        </div>
+        <div class="radio radio-primary">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option2
+          </label>
+        </div>
+        <div class="radio radio-primary">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+            Option3
+          </label>
+        </div>
+        <div class="radio radio-primary">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+            Option4
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- question ends -->
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+          <button type="submit" class="btn btn-success pull-right" name="submitQuiz">Submit</button>
+
+        </div>
+      </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

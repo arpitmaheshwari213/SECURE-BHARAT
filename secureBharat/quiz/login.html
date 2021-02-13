@@ -1,0 +1,66 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Material design -->
+  <link href="css/material/bootstrap-material-design.css" rel="stylesheet">
+  <link href="css/material/ripples.min.css" rel="stylesheet">
+  <script src="js/material/material.min.js"></script>
+  <script src="js/material/ripples.min.js"></script>
+
+
+  <script>
+  $(document).ready(function(){
+    $.material.init();
+    $("select").dropdown();
+  });
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-sm-offset-3 col-sm-6 col-xs-12 col-md-offset-4 col-md-4" style="margin-top:50px;margin-bottom:50px;">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <p class="panel-title" style="text-align: center; font-size: 36px; line-height: 1.5;">
+              <i class="material-icons" style="font-size: 48px;">school</i><br>
+              SIGN IN</p>
+            </div>
+            <div class="panel-body">
+              <form action="login_process.php" method="POST" style="margin-top: 12px;">
+                <div class="form-group label-floating">
+                  <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="material-icons">email</i></span>
+                    <label for="email" class="control-label">Email</label>
+                    <input class="form-control" type="email" name="email" maxlength="255" pattern="([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)" required>
+                    <p class="help-block">Enter a valid email address</p>
+                  </div>
+                </div>
+                <div class="form-group label-floating">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="material-icons">vpn_key</i></span>
+                    <label for="password" class="control-label">Password</label>
+                    <input class="form-control" type="password" name="password" maxlength="60" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success pull-right" name="submit" value="submit">Sign In</button>
+              </form>
+              <div class="clearfix"></div>
+              <div>
+                <p style="text-align: center;">Don't have and account yet?<a href="signup.html" style="color: #2196f3;"> Register</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
