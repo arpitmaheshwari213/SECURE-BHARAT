@@ -16,6 +16,7 @@ i4c id - 7169
 6. Ayush Sharma
 
 College Name - M. B. M. Engineering College, Jodhpur, Rajasthan 
+
 Selected in final round of SmartIndiaHackathon-2K17
 
 ### Tech Stack
