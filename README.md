@@ -13,7 +13,7 @@ i4c id - 7169
 3. Nidhi Bothra
 4. Piyush Sharma
 5. Shubham Sharma
-6. Ayush Sharma
+6. Ayush Kasara
 
 College Name - M. B. M. Engineering College, Jodhpur, Rajasthan 
 
